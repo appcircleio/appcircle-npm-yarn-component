@@ -6,8 +6,8 @@ def env_has_key(key)
 	return (ENV[key] == nil || ENV[key] == "") ? nil : ENV[key]
 end
 
-repo_path = env_has_key("AC_REPOSITORY_DIR") || abort("Missing AC_REPOSITORY_DIR.")
-npm_params = env_has_key("AC_NPM_PARAMETER") || "install"
+repo_path = env_has_key("AC_WORKING_DIR") || abort("Missing AC_WORKING_DIR.")
+npm_params = env_has_key("AC_NPM_COMMAND_ARGS") || "install"
 
 def run_command(command)
     puts "@[command] #{command}"
