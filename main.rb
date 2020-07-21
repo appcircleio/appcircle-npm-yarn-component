@@ -10,7 +10,7 @@ repo_path = env_has_key("AC_WORKING_DIR") || abort("Missing AC_WORKING_DIR.")
 npm_params = env_has_key("AC_NPM_COMMAND_ARGS") || "install"
 
 def run_command(command)
-    puts "@[command] #{command}"
+    puts "@@[command] #{command}"
     status = nil
     stdout_str = nil
     stderr_str = nil
