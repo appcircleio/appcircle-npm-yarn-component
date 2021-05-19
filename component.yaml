@@ -1,7 +1,7 @@
 platform: Common
 buildPlatform:
-displayName: NPM/YARN Command
-description: "Runs npm/yarn with the given commands."
+displayName: npm/Yarn Commands
+description: "Runs npm/Yarn with the given commands."
 inputs:
 - key: "AC_WORKING_DIR"
   defaultValue: "$AC_REPOSITORY_DIR"
